@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+  
+  {% block content %}
+    <div>
+      {% for datas in data %}
+        <div class="cards">
+          <span>{{ datas['id'] }}</span>
+          <p>{{ datas['title'] }}</p>
+          <p>{{ datas['body'] }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  {% endblock content %}
